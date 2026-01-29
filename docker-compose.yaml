@@ -72,6 +72,8 @@ services:
       args:
         - VITE_API_HOST=/api
     container_name: lifeforge-client
+    ports:
+      - "5693:80"
     restart: unless-stopped
     depends_on:
       server:
