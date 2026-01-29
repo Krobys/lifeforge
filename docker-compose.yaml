@@ -72,7 +72,7 @@ services:
     container_name: lifeforge-client
     restart: unless-stopped
     ports:
-      - "80:80"
+      - "5693:80"  # <--- ТЕПЕРЬ ДОСТУПЕН ПО ПОРТУ 5693
     depends_on:
       server:
         condition: service_started
