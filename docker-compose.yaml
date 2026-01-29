@@ -53,6 +53,8 @@ services:
       - DOCKER_MODE=true
       - NODE_ENV=production
       - PB_HOST=http://db:8090
+      - PB_EMAIL=${PB_EMAIL}
+      - PB_PASSWORD=${PB_PASSWORD}
       - MASTER_KEY=${MASTER_KEY}
     expose:
       - "3636"
